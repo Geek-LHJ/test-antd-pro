@@ -62,6 +62,12 @@
                 component: './Dnd',
               },
               {
+                path: '/dndKit',
+                name: 'dndKit',
+                icon: 'table',
+                component: './DndKit',
+              },
+              {
                 path: '/comp',
                 name: 'comp',
                 icon: 'table',

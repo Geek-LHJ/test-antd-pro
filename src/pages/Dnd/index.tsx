@@ -6,12 +6,12 @@ import update from 'immutability-helper';
 
 const type = 'DragableBodyRow';
 
-const DragableBodyRow = ({ index, moveRow, className, style, ...restProps }) => {
+const DragableBodyRow = ({ index, moveRow, className, style, ...restProps }: any) => {
   const ref = useRef();
   const [{ isOver, dropClassName }, drop] = useDrop({
     accept: type,
     collect: monitor => {
-      const { index: dragIndex } = monitor.getItem() || {};
+      const { index: dragIndex } = monitor.getItem() || {} as any;
       if (dragIndex === index) {
         return {};
       }
@@ -20,7 +20,7 @@ const DragableBodyRow = ({ index, moveRow, className, style, ...restProps }) => 
         dropClassName: dragIndex < index ? ' drop-over-downward' : ' drop-over-upward',
       };
     },
-    drop: item => {
+    drop: (item: any) => {
       moveRow(item.index, index);
     },
   });
@@ -113,7 +113,7 @@ const DragSortingTable: React.FC = () => {
         onRow={(record, index) => ({
           index,
           moveRow,
-        })}
+        }) as any}
       />
     </DndProvider>
   );
