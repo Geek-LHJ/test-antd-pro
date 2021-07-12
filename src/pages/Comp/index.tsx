@@ -1,8 +1,9 @@
+import MyRCFieldForm from './react01-form/MyRCFieldForm';
 
-export default () => {
+export default function App() {
   return (
     <div>
-      1111
+      <MyRCFieldForm />
     </div>
   );
-};
+}

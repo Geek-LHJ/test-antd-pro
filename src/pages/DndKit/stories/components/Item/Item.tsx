@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import classNames from 'classnames';
-import {DraggableSyntheticListeners} from '@dnd-kit/core';
-import {Transform} from '@dnd-kit/utilities';
+import type {DraggableSyntheticListeners} from '@dnd-kit/core';
+import type {Transform} from '@dnd-kit/utilities';
 
 import {Handle, Remove} from './components';
 
@@ -23,8 +23,8 @@ export interface Props {
   transition?: string | null;
   wrapperStyle?: React.CSSProperties;
   value: React.ReactNode;
-  onRemove?(): void;
-  renderItem?(args: {
+  onRemove?: () => void;
+  renderItem?: (args: {
     dragOverlay: boolean;
     dragging: boolean;
     sorting: boolean;
@@ -36,7 +36,7 @@ export interface Props {
     transform: Props['transform'];
     transition: Props['transition'];
     value: Props['value'];
-  }): React.ReactElement;
+  }) => React.ReactElement;
 }
 
 export const Item = React.memo(
