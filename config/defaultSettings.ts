@@ -2,10 +2,12 @@ import { Settings as ProSettings } from '@ant-design/pro-layout';
 
 type DefaultSettings = Partial<ProSettings> & {
   pwa: boolean;
+  logo: string;
 };
 
 const proSettings: DefaultSettings = {
-  navTheme: 'dark',
+  logo: 'https://pic1.zhimg.com/v2-cba0b89d2bf2d96a1ed26edb5849f804_180x120.jpg',
+  navTheme: 'light', // dark
   // 拂晓蓝
   primaryColor: '#1890ff',
   layout: 'side',
@@ -13,7 +15,7 @@ const proSettings: DefaultSettings = {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'Ant Design Pro',
+  title: '测试框架-frame',
   pwa: false,
   iconfontUrl: '',
 };

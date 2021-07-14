@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, {Component} from "react";
 import FieldContext from "./FieldContext";
 
@@ -22,7 +23,7 @@ class Field extends Component {
     const {name} = this.props;
     const {getFieldValue, setFieldsValue} = this.context;
     return {
-      value: getFieldValue(name), //"omg", //get(name) store
+      value: getFieldValue(name), // "omg", //get(name) store
       onChange: (e) => {
         const newVal = e.target.value;
         // store set（name）
@@ -33,7 +34,7 @@ class Field extends Component {
   };
 
   render() {
-    console.log("render"); //sy-log
+    console.log("render"); // sy-log
     const {children} = this.props;
     const returnChildNode = React.cloneElement(children, this.getControlled());
     return returnChildNode;

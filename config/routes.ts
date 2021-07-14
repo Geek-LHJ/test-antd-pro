@@ -25,7 +25,7 @@
             routes: [
               {
                 path: '/',
-                redirect: '/welcome',
+                // redirect: '/welcome',
               },
               {
                 path: '/welcome',
