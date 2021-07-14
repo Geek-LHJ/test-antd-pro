@@ -19,8 +19,8 @@ export default (): React.ReactNode => {
       <Card>
         <Alert
           message={intl.formatMessage({
-            id: 'pages.welcome.alertMessage',
-            defaultMessage: 'Faster and stronger heavy-duty components have been released.',
+            id: 'pages.welcome.alertMessage-xxx',
+            defaultMessage: 'Faster and stronger heavy-duty components have been released.——————————————————test',
           })}
           type="success"
           showIcon

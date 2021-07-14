@@ -16,8 +16,8 @@ export default (): React.ReactNode => {
       <Card>
         <Alert
           message={intl.formatMessage({
-            id: 'pages.welcome.alertMessage',
-            defaultMessage: 'Faster and stronger heavy-duty components have been released.',
+            id: 'pages.welcome.alertMessage-test-xxxxx',
+            defaultMessage: 'Faster and stronger heavy-duty components have been released. 测试——————10212010',
           })}
           type="success"
           showIcon
@@ -28,13 +28,13 @@ export default (): React.ReactNode => {
           }}
         />
         <Typography.Title level={2} style={{ textAlign: 'center' }}>
-          <SmileTwoTone /> Ant Design Pro <HeartTwoTone twoToneColor="#eb2f96" /> You
+          <SmileTwoTone /> FFFFFFFFFFF________测试_________Ant Design Pro <HeartTwoTone twoToneColor="#eb2f96" /> You
         </Typography.Title>
       </Card>
       <p style={{ textAlign: 'center', marginTop: 24 }}>
         Want to add more pages? Please refer to{' '}
         <a href="https://pro.ant.design/docs/block-cn" target="_blank" rel="noopener noreferrer">
-          use block
+          use block --------------------------test
         </a>
         。
       </p>

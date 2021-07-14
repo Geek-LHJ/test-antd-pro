@@ -15,7 +15,7 @@ const proSettings: DefaultSettings = {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: '测试框架-frame',
+  title: 'Test-Frame',
   pwa: false,
   iconfontUrl: '',
 };
